@@ -7,6 +7,19 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Speechly Budget Tracker" />
     <title>Expense Tracker</title>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "63945474-bbaa-4102-b391-e1ebac9f5c4b", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "215efb93-bfd2-4025-b873-89f59f8680c9", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
